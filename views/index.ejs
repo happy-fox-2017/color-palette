@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <ul>
+    <% for (let i = 0; i < palettes.length; i += 1) { %>
+      <li><div style="background-color: <%= palettes[i] %>; width: 10px; height: 10px;"></div></li>
+    <% } %>
+    </ul>
+  </body>
+</html>
